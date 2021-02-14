@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "566474375633",
+    "project_id": "quizet-tanush",
+    "storage_bucket": "quizet-tanush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566474375633:android:2e5521d72fff3d6609e0f0",
+        "android_client_info": {
+          "package_name": "com.quizet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566474375633-b22gc5tar56kcsbp20oite24pumruvm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quizet",
+            "certificate_hash": "14b9d4515afeb6114b8fa6c4d77dff7a10fb0eac"
+          }
+        },
+        {
+          "client_id": "566474375633-vq633p1rh0gc54d1icma04moo7fcihcg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUPJuWDLcCF3HGiGZ3G9yewiURyVWddUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566474375633-vq633p1rh0gc54d1icma04moo7fcihcg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
