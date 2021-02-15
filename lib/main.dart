@@ -1,4 +1,5 @@
 import 'package:firebase_analytics/observer.dart';
+import 'package:quizet/add_quiz_data.dart';
 import 'screens/profile_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -17,10 +18,10 @@ void main() async {
   await Firebase.initializeApp();
   analytics = FirebaseAnalytics();
   analytics.logAppOpen();
-  runApp(Flaggy());
+  runApp(Quizet());
 }
 
-class Flaggy extends StatelessWidget {
+class Quizet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FirebaseAnalyticsObserver observer =
@@ -45,6 +46,7 @@ class Flaggy extends StatelessWidget {
         'signin': (BuildContext context) => LoginScreen(),
         'forgot': (BuildContext context) => ForgotScreen(),
         'profile': (BuildContext context) => ProfileScreen(),
+        'addQuizData': (BuildContext context) => AddQuizData()
       },
       home: !isLoggedIn
           ? HomePage(
