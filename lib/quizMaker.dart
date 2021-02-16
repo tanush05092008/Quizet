@@ -29,7 +29,7 @@ class _QuizMakerState extends State<QuizMaker> {
       ),
       appBar: AppBar(
         backgroundColor: Color(0xffB721FF),
-        title: Text('Quiz Maker'),
+        title: Text('Quiz Maker',style: GoogleFonts.permanentMarker(fontSize: 30),),
         elevation: 0.0,
         centerTitle: true,
       ),
@@ -62,7 +62,9 @@ class _QuizMakerState extends State<QuizMaker> {
                 ),
                 hoverColor: Colors.red,
                 padding: EdgeInsets.all(20),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'addQuizData');
+                },
                 child: Text(
                   'True/False Quiz',
                   style: GoogleFonts.pacifico(

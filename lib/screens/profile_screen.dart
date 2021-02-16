@@ -83,7 +83,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: pickedImage
+                                image:  pickedImage
                                     ? NetworkImage(snapshot.data['photoUrl'])
                                     : NetworkImage(
                                         'https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png'),
@@ -250,6 +250,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                           ],
                         );
+                        _auth.signOut();
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -272,6 +273,61 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           children: <Widget>[
                             Text(
                               'Sign Out',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
+                            Icon(
+                              Icons.arrow_forward,
+                              color: Colors.black,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        showDialogBox(
+                          'Do you really want to Delete your Account',
+                          context,
+                          'Delete Account',
+                          [
+                            FlatButton(
+                              onPressed: () {
+                                Navigator.pushReplacementNamed(
+                                    context, 'signup');
+                              },
+                              child: Text('Yes'),
+                            ),
+                            FlatButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text('No'),
+                            ),
+                          ],
+                        );
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color(0xffB721FF),
+                              offset: Offset(0.0, 1.0), //(x,y)
+                              blurRadius: 6.0,
+                            ),
+                          ],
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        padding:
+                        EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              'Delete Account',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,

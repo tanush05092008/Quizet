@@ -48,7 +48,8 @@ class Quizet extends StatelessWidget {
         'profile': (BuildContext context) => ProfileScreen(),
         'addQuizData': (BuildContext context) => AddQuizData()
       },
-      home: !isLoggedIn
+      home:
+      !isLoggedIn
           ? HomePage(
               analytics: analytics,
               observer: observer,
@@ -57,3 +58,9 @@ class Quizet extends StatelessWidget {
     );
   }
 }
+// !isLoggedIn
+//           ? HomePage(
+//               analytics: analytics,
+//               observer: observer,
+//             )
+//           : LoginScreen(),
