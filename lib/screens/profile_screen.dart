@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -23,6 +25,7 @@ final GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
 
 class _ProfileScreenState extends State<ProfileScreen> {
   String _newName, _newPassword;
+
 
   @override
   Widget build(BuildContext context) {

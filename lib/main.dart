@@ -46,7 +46,8 @@ class Quizet extends StatelessWidget {
         'signin': (BuildContext context) => LoginScreen(),
         'forgot': (BuildContext context) => ForgotScreen(),
         'profile': (BuildContext context) => ProfileScreen(),
-        'addQuizData': (BuildContext context) => AddQuizData()
+        'addQuizData': (BuildContext context) => AddQuizData(),
+
       },
       home:
       !isLoggedIn
