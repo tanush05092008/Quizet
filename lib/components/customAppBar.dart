@@ -11,7 +11,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: AnimatedContainer(
         child: ClipRRect(
           child: Container(
-            color: Color(0xffB721FF),
+            color: Color(0xff23195F),
             child: Container(
               alignment: Alignment.center,
               child: child,

@@ -26,7 +26,6 @@ final GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
 class _ProfileScreenState extends State<ProfileScreen> {
   String _newName, _newPassword;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,7 +85,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image:  pickedImage
+                                image: pickedImage
                                     ? NetworkImage(snapshot.data['photoUrl'])
                                     : NetworkImage(
                                         'https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png'),
@@ -325,7 +324,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding:
-                        EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                            EdgeInsets.symmetric(vertical: 12, horizontal: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[

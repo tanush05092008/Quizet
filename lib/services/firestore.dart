@@ -10,7 +10,10 @@ Future<void> userSetup(
     'displayName': displayName,
     'email': email,
     'photoUrl': photoUrl,
-    'coin': coin
+    'coin': coin,
+    'level' : 1,
+    'tag' : 'Beginner',
+    'exp': 0
   });
   return null;
 }

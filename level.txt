@@ -1,0 +1,14 @@
+Level 1 = Beginner Exp 2000
+Level 2 = Learner Exp 4000
+Level 3 = Explorer Exp 6000
+Level 4 = Intermediate  Exp 8000
+Level 5 = Bronze Exp 10000
+Level 6 = Silver Exp 12000
+Level 7 = Gold Exp 140000
+Level 8 = Platinum Exp 18000
+Level 9 = Diamond  Exp 19000
+Level 10 =  Diamond II Exp 22000
+Level 11 = Diamond III Exp 24000
+Level 12 = Expert Exp 30000
+Level 13 = GrandMaster Exp 50000
+Level 14 = Zen Master Exp 100000

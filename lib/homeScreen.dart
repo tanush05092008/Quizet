@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff9823FE),
+      backgroundColor: Color(0xff23195F),
       appBar: CustomAppBar(
         MediaQuery.of(context).size.height * 0.13,
         StreamBuilder(
@@ -87,29 +87,37 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: 30,
                     ),
                     CircleAvatar(
-                      minRadius: 22,
-                      backgroundColor: Colors.white,
-                      backgroundImage: pickedImage
-                          ? NetworkImage(snapshot.data['photoUrl'])
-                          : NetworkImage(
-                              'https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png'),
-                    ),
+                        minRadius: 22,
+                        backgroundColor: Colors.white,
+                        backgroundImage: snapshot.data['photoUrl'] == null
+                            ? NetworkImage(
+                            'https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png')
+                            : NetworkImage(snapshot.data['photoUrl'])),
                     SizedBox(
                       width: 10,
                     ),
-                    Text(
-                      snapshot.data['displayName'],
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white,
-                      ),
+                    Column(
+                      children: [
+                        Text(
+                          snapshot.data['displayName'],
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
                       width: 40,
                     ),
-                    Image.asset(
-                      'assets/coin.png',
-                      height: 40,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          'assets/coin.png',
+                          height: 40,
+                        ),
+                      ],
                     ),
                     SizedBox(
                       width: 10,
@@ -151,28 +159,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Padding(
             padding: const EdgeInsets.only(
-              top: 12,
-              bottom: 4,
-              left: 10,
-            ),
-            child: Text(
-              'Choose Your',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w900,
-                fontFamily: 'Montserrat',
-                fontSize: 30,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
               top: 4,
               bottom: 4,
               left: 10,
             ),
             child: Text(
-              'Category',
+              'Categories',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,
