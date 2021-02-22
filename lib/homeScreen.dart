@@ -191,7 +191,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisCount: 2,
                   children: snapshot.data.docs.map((documents) {
                     return GestureDetector(
-                      onTap: () {},
+                      onTap: (){
+                        Navigator.pushNamed(context, 'selectedQuiz');                     },
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Card(

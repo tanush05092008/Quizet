@@ -1,5 +1,6 @@
 import 'package:firebase_analytics/observer.dart';
-import 'package:quizet/add_quiz_data.dart';
+import 'package:quizet/quiz_selected.dart';
+import 'file:///E:/Project%20Repositories/FlutterProjects/quizet/lib/quizMaker/add_quiz_data.dart';
 import 'screens/profile_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +48,7 @@ class Quizet extends StatelessWidget {
         'forgot': (BuildContext context) => ForgotScreen(),
         'profile': (BuildContext context) => ProfileScreen(),
         'addQuizData': (BuildContext context) => AddQuizData(),
+        'selectedQuiz' : (BuildContext context) => QuizSelected(),
 
       },
       home:

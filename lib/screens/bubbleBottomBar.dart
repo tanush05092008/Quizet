@@ -5,7 +5,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:quizet/screens/profile_screen.dart';
 import '../homeScreen.dart';
-import '../quizMaker.dart';
+import '../quizMaker/quizMaker.dart';
 
 class HomePage extends StatefulWidget {
   final FirebaseAnalytics analytics;

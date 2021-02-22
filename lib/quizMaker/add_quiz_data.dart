@@ -4,9 +4,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:quizet/methods/bottomSheet.dart';
-import 'methods/updateData.dart';
-import 'components/buildTextField.dart';
-import 'components/showDialog.dart';
+import '../methods/updateData.dart';
+import '../components/buildTextField.dart';
+import '../components/showDialog.dart';
 
 class AddQuizData extends StatefulWidget {
   @override
